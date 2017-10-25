@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:background="#ffffff">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:src="@drawable/cancle"
+            android:onClick="click_personal"
+            android:id="@+id/iv_back"
+            android:focusableInTouchMode="false" />
+
+        <TextView
+            android:id="@+id/PeakofLife"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="货物详情"
+            android:paddingRight="75dip"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/scrollView"
+        android:layout_alignParentEnd="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <View style="@style/bg_line"/>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:id="@+id/linearLayout1"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/goods_info"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="货物信息"
+                    android:paddingTop="8dip"
+                    android:paddingLeft="10dip"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/mission_info1"
+                android:layout_below="@+id/linearLayout1">
+                <!-- 图片布局 -->
+                <ImageView
+                    android:id="@+id/pro_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/background"/>
+                <!-- 商品名称和价格的布局 -->
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+                    <TextView
+                        android:id="@+id/pro_goods"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="货物名称"
+                        android:layout_marginTop="8dp"
+                        />
+                    <!-- 商品名称的布局 -->
+                    <TextView
+                        android:id="@+id/pro_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="28dp"
+                        android:text="收件时间"
+                        />
+                    <!-- 价格的布局 -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="45dp"
+                        android:id="@+id/relativeLayout">
+                        <TextView
+                            android:id="@+id/pro_des"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="描述" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="135dp"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout4">
+                <View style="@style/bg_line"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout3"
+
+                android:layout_below="@+id/linearLayout4"
+                android:layout_alignParentStart="true"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/goods_info"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="寄货信息"
+                    android:paddingTop="8dip"
+                    android:paddingLeft="10dip"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="165dp"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout5">
+                <View style="@style/bg_line"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/mission_info1"
+                android:layout_marginTop="165dp"
+                android:paddingLeft="10dp">
+                <!-- 图片布局 -->
+                <!-- 商品名称和价格的布局 -->
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="寄货人"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/poster" />
+                    <!-- 商品名称的布局 -->
+                    <TextView
+                        android:id="@+id/postPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="28dp"
+                        android:text="联系方式"
+                        />
+                    <!-- 价格的布局 -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="42dp"
+                        android:id="@+id/relativeLayout">
+                        <TextView
+                            android:id="@+id/postDes"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:text="备注" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="235dp"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout6">
+                <View style="@style/bg_line"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout7"
+
+                android:layout_below="@+id/linearLayout6"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/goods_info"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="收货信息"
+                    android:paddingTop="8dip"
+                    android:paddingLeft="10dip"
+                    android:textSize="15sp"
+                    android:background="#ffffff" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/mission_info1"
+                android:layout_marginTop="265dp"
+                android:paddingLeft="10dp">
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    android:layout_below="@+id/linearLayout8"
+                    android:layout_alignParentEnd="true">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="收货人"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/getName" />
+                    <!-- 商品名称的布局 -->
+                    <TextView
+                        android:id="@+id/getPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="28dp"
+                        android:text="联系方式"
+                        />
+                    <!-- 价格的布局 -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="42dp"
+                        android:id="@+id/relativeLayout">
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:text="地址" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <!-- 图片布局 -->
+                <!-- 商品名称和价格的布局 -->
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="265dp"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout8"
+                >
+                <View style="@style/bg_line"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="335dp"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout9"
+                >
+                <View style="@style/bg_line"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp">
+                <View style="@style/bg_line" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:id="@+id/button"
+        android:onClick="click_accept"
+        android:background="@drawable/certain_order"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

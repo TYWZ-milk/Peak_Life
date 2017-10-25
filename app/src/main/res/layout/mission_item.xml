@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/mission_info1">
+        <!-- 图片布局 -->
+        <ImageView
+            android:id="@+id/pro_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background"/>
+        <!-- 商品名称和价格的布局 -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/pro_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="货物名称"
+                android:layout_marginTop="8dp"
+                android:textColor="#000000" />
+            <!-- 商品名称的布局 -->
+            <TextView
+                android:id="@+id/pro_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="收件人"
+                android:textColor="#000000" />
+            <!-- 价格的布局 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="42dp"
+                android:id="@+id/relativeLayout">
+                <TextView
+                    android:id="@+id/pro_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="待接/已接/已送达"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/del"
+                    android:layout_width="44dp"
+                    android:layout_height="31dp"
+                    android:focusable="false"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/cancle"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/pro_add"
+                android:layout_width="match_parent"
+                android:layout_marginTop="66dp"
+                android:layout_height="match_parent"
+                android:text="地址"
+                android:textColor="#000000" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

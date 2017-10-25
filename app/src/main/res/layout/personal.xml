@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+
+  >
+    <com.makeramen.roundedimageview.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:src="@drawable/background"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="10dp"
+        app:riv_mutate_background="true"
+        app:riv_oval="true"
+        android:id="@+id/view"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="昵称"
+        android:textSize="20sp"
+        android:id="@+id/name"
+        android:paddingTop="20dip"
+        android:paddingLeft="30dip"
+        android:textColor="#000000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="性别"
+        android:textSize="20sp"
+        android:id="@+id/sex"
+        android:paddingTop="20dip"
+        android:paddingLeft="30dip"
+        android:textColor="#000000" />
+
+</LinearLayout>
+
+    <View style="@style/bg_line"/>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/scrollView"
+        android:layout_alignParentEnd="true">
+    <LinearLayout style="@style/wrap_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 无圆角-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </LinearLayout>
+        <!-- 分割线 -->
+        <View style="@style/bg_line"/>
+        <!-- 上圆角-->
+        <LinearLayout style="@style/mid_layout">
+            <TextView style="@style/usertext" android:text="我的地址"
+                android:textColor="#000000" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+        <!-- 分割线 -->
+        <View style="@style/bg_line"/>
+        <!-- 无圆角-->
+        <LinearLayout style="@style/mid_layout">
+            <TextView style="@style/usertext" android:text="我的记录"
+                android:textColor="#000000" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <!-- 下圆角-->
+        <LinearLayout style="@style/mid_layout">
+            <TextView style="@style/usertext" android:text="我的评价"
+                android:textColor="#000000" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <!-- 下圆角-->
+        <LinearLayout style="@style/mid_layout">
+            <TextView style="@style/usertext" android:text="送货人认证"
+                android:textColor="#000000" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <!-- 下圆角-->
+        <LinearLayout style="@style/mid_layout">
+            <TextView style="@style/usertext" android:text="我的钱包"
+                android:textColor="#000000" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <!-- 下圆角-->
+        <LinearLayout style="@style/mid_layout">
+            <TextView style="@style/usertext" android:text="我的积分"
+                android:textColor="#000000" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <!-- 下圆角-->
+        <LinearLayout style="@style/mid_layout">
+            <TextView style="@style/usertext" android:text="使用帮助"
+                android:textColor="#000000" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <!-- 下圆角-->
+        <LinearLayout style="@style/mid_layout">
+            <TextView style="@style/usertext" android:text="设置"
+                android:textColor="#000000" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+</LinearLayout>
+</ScrollView>
+    </LinearLayout>
+
+

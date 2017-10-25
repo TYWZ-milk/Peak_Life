@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:src="@drawable/background"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="10dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        app:riv_mutate_background="true"
+        app:riv_oval="true"
+        android:id="@+id/view"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+    <com.example.exerciese.DeletableEditText
+        android:id="@+id/tv_user"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:background="@android:drawable/editbox_background"
+        android:drawableRight="@drawable/cancle"
+        android:hint="手机号"
+        android:ems="10"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <com.example.exerciese.DeletableEditText
+        android:id="@+id/tv_psd"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/cancle"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/tv_user"
+        android:layout_alignStart="@+id/tv_user"
+        android:background="@android:drawable/editbox_background"/>
+
+    <ImageView
+        android:id="@+id/bt_login"
+        android:layout_marginTop="30dp"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_psd"
+        android:layout_alignStart="@+id/tv_psd"
+        android:background="@drawable/login"
+        android:clickable="true" />
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:id="@+id/bt_regist"
+        android:layout_below="@+id/bt_login"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/regist"
+        android:clickable="true" />
+
+</RelativeLayout>

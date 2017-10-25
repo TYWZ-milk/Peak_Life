@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:src="@drawable/cancle"
+            android:id="@+id/iv_back"
+            />
+
+        <TextView
+            android:id="@+id/PeakofLife"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="收货人信息" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="确认"
+            android:textSize="20sp"
+            android:id="@+id/certain"
+            android:paddingTop="7dip"
+            android:paddingRight="20dip"
+            android:textColor="#000000" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/scrollView"
+        android:layout_alignParentEnd="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="45dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="30dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="收货人"
+                android:textSize="20sp"
+                android:paddingTop="10dip"
+                android:paddingLeft="10dip"
+                android:id="@+id/goods_name"
+                />
+
+            <com.example.exerciese.DeletableEditText
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:id="@+id/Editgeter"
+                android:hint="请输入收货人"
+                android:singleLine="true"
+                android:layout_below="@+id/goods_name"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:drawableRight="@drawable/cancle"
+                android:background="@android:drawable/editbox_background"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="联系方式"
+                android:textSize="20sp"
+                android:id="@+id/address"
+                android:layout_below="@+id/goods_name"
+                android:layout_marginTop="50dip"
+                android:paddingLeft="10dip"
+                />
+
+            <com.example.exerciese.DeletableEditText
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:id="@+id/Editphone"
+                android:hint="请输入联系方式"
+                android:singleLine="true"
+                android:layout_below="@+id/address"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:drawableRight="@drawable/cancle"
+                android:background="@android:drawable/editbox_background"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="地址"
+                android:textSize="20sp"
+                android:id="@+id/phone"
+                android:layout_below="@+id/address"
+                android:layout_marginTop="50dip"
+                android:paddingLeft="10dip"
+                />
+
+            <com.example.exerciese.DeletableEditText
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:id="@+id/Editadd"
+                android:drawableRight="@drawable/cancle"
+                android:hint="请输入地址"
+                android:singleLine="false"
+                android:layout_below="@+id/phone"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:background="@android:drawable/editbox_background"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
